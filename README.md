@@ -32,10 +32,12 @@ http://lib.sinaapp.com/
 
 防止加载失败方案：
 
+```
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
 <script type="text/javascript">  <!--  !window.jQuery && document.write('<script src=/jQuery/jquery-1.9.0.min.js><\/script>'); //-->  </script>
-
+```
  
 也可以这样 
-
+```
 <!--  document.write(unescape("%3Cscript src='http://libs.baidu.com/jquery/1.9.0/jquery.min.js' type='text/javascript'%3E%3C/script%3E")); !window.jQuery && document.write(unescape("%3Cscript src='/jQuery/jquery-1.9.0.min.js' type='text/javascript'%3E%3C/script%3E")); //--> 
+```
